@@ -293,7 +293,7 @@
         
         @if($transaksis->hasPages() || $transaksis->count() > 0)
         <div class="pagination-wrapper no-print">
-            {{ $transaksis->links('pagination::tailwind') }}
+            {{ $transaksis->links('pagination::bootstrap-4') }}
         </div>
         @endif
     </div>

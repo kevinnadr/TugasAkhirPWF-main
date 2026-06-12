@@ -267,7 +267,7 @@
             Menampilkan {{ $users->firstItem() ?? 0 }} sampai {{ $users->lastItem() ?? 0 }} dari {{ $users->total() }} pengguna
         </div>
         <div class="pagination-links">
-            {{ $users->links('pagination::tailwind') }}
+            {{ $users->links('pagination::bootstrap-4') }}
         </div>
     </div>
     @endif

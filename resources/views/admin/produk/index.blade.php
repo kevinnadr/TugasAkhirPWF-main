@@ -354,7 +354,7 @@
             Menampilkan {{ $produks->firstItem() ?? 0 }} sampai {{ $produks->lastItem() ?? 0 }} dari {{ $produks->total() }} produk
         </div>
         <div class="pagination-links">
-            {{ $produks->links('pagination::tailwind') }}
+            {{ $produks->links('pagination::bootstrap-4') }}
         </div>
     </div>
     @endif
