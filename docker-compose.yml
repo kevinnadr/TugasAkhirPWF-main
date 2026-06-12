@@ -1,0 +1,27 @@
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: laravel_app
+        restart: always
+        ports:
+            - "8000:80"
+        environment:
+            DB_CONNECTION: pgsql
+            DB_HOST: ep-hidden-sea-aoabu6co.c-2.ap-southeast-1.aws.neon.tech
+            DB_PORT: 5432
+            DB_DATABASE: neondb
+            DB_USERNAME: neondb_owner
+            DB_PASSWORD: npg_sanJldm7KCI1
+            DB_SSLMODE: require
+        volumes:
+            - laravel_storage:/var/www/html/storage
+        networks:
+            - laravel_network
+
+volumes:
+    laravel_storage:
+
+networks:
+    laravel_network:
