@@ -10,6 +10,9 @@ php artisan cache:clear
 php artisan view:clear
 php artisan route:clear
 
+echo "Creating storage link..."
+php artisan storage:link
+
 echo "Running Database Migrations..."
 php artisan migrate --seed
 
